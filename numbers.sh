@@ -1,6 +1,6 @@
-#! /bin/bash
-# number.sh
-# Reese Quigley
+#!/bin/bash
+#number.sh
+#Reese Quigley
 
 echo "Enter a positive Number"
 read -r number
