@@ -2,15 +2,18 @@
 # number.sh
 # Reese Quigley
 
-echo -n "Enter a Number"
-read n
+echo "Enter a positive Number"
+read -r number
 
-for i in $(seq 100);do
-   if (( $i % 2 ));then
-      echo $i is odd
-   else
-      echo "$i is even"
+N=1
+while [ "$N" -le "$number" ]
+do
+      if [ $((N%2)) -eq 0]
+   then
+      echo "$N is even"
+    else
+      echo "$N is odd"
     fi
+    N=$((N+1))
 done
-echo "Thank You"
 
